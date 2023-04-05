@@ -1,4 +1,6 @@
-package com.example.kursovaya2;
+package com.example.kursovaya2.service;
+
+import com.example.kursovaya2.Question;
 
 import java.util.Collection;
 
