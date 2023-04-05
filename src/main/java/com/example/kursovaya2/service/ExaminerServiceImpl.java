@@ -21,10 +21,10 @@ public class ExaminerServiceImpl implements ExaminerService {
             throw new WrongSizeQuestionsException("Введенное число превышает количество вопросов");
         }
 
-        Set<Question> questionList = new HashSet<>();
-        while (questionList.size() < amount) {
-            questionList.add(questionService.getRandomQuestion());
+        Set<Question> question = new HashSet<>();
+        while (question.size() < amount) {
+            question.add(questionService.getRandomQuestion());
         }
-        return questionList;
+        return question;
     }
 }

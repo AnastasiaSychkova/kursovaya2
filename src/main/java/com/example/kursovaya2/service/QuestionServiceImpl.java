@@ -52,6 +52,7 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     public Question getRandomQuestion() {
-        return questions.get(random.nextInt(questions.size()));
+        Question q = questions.get(random.nextInt(questions.size()));
+        return q;
     }
 }
