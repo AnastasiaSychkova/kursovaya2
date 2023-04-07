@@ -9,7 +9,6 @@ import java.util.*;
 @Service
 
 public class ExaminerServiceImpl implements ExaminerService {
-    //private Random random;
     private QuestionService questionService;
 
     ExaminerServiceImpl(QuestionService questionService) {
